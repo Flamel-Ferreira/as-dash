@@ -3,21 +3,18 @@
 ### Todo List:
 - Criar **função de resize**;
 - Criar **breakpoints**;
-- Conectar os arquivos;
 - Importar **fontes**;
 - Criar o **manifest** e configurações do **service worker**;
 - Criar os **ícones** para app PWA;
 - **Testar** o aplicativo offline;
 - **Baixar os ícones** necessários;
-- Preencher o README.md;
 - Criar lógica de **renderização de screen**;
 - Criar função `q`, `message`, `tooltip`, `toast`, trocar de código de textos por svg dos icones do sistema;
-- Componentizar estilos;
 - Criar tela de login;
 - Criar tela de dashboard;
 - Criar um menu desktop e mobile;
 - Criar lógica de troca de aba;
-- Criar estrutura da tela de edição com cuidado para acessibilidade;
+- Criar estrutura da tela de edição com cuidado para acessibilidade (PULOS DO TAB);
 - Nomear e preparar os inputs para submit;
 - Criar lógica de armazenar em local storage;
 - Criar funções de adicionar novos `Condicionantes`, `Objetivos Principais`, `Objetivos Secundários`, `Ativações`, `Ameaças` 
@@ -45,9 +42,14 @@
 
 ## 07/05/2026
 - Criar estrutura inicial do **html**;
+- Conectar os arquivos;
+
 
 ## 08/05/2026
+- Preencher o README.md;
 - Criar variáveis de estilo;
+- Componentizar estilos;
+
 
 
 
