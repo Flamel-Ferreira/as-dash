@@ -3,7 +3,6 @@
 ### Todo List:
 - Criar **função de resize**;
 - Criar **breakpoints**;
-- Criar estrutura inicial do **html**;
 - Conectar os arquivos;
 - Importar **fontes**;
 - Criar o **manifest** e configurações do **service worker**;
@@ -13,7 +12,6 @@
 - Preencher o README.md;
 - Criar lógica de **renderização de screen**;
 - Criar função `q`, `message`, `tooltip`, `toast`, trocar de código de textos por svg dos icones do sistema;
-- Criar variáveis de estilo;
 - Componentizar estilos;
 - Criar tela de login;
 - Criar tela de dashboard;
@@ -28,13 +26,15 @@
 - Criar Lógica de montar a tela com as informações do localStorage se houver
 - Criar lógica de limpar tela de Edição;
 - Criar a lógica de rolagem dos Dados;
+- Criar tela de seleção de conflitos
+
 
 
 ## 04/05/2026
 - Prototipação da estrutura;
 - Criação do **sistema de pastas**: `assests`, `css`, `docs`, `js`;
 - Criação da **documentação**: `changelog.md`, `knowledge_base.md`, `structure.js`;
-- Criação de **arquivos**: `index.html`, `glogal.css`, `app.js`,`main.js`,`utils.js`;
+- Criação de **arquivos**: `index.html`, `glogal.css`, `style.css`, `app.js`,`main.js`,`utils.js`;
 - Criar Layout da tela de Gerenciamento de Conflitos; 
 
 ## 05/05/2026
@@ -42,4 +42,12 @@
 - Criação dos icones em svg de `sucesso`,`adaptacao`,`pressao`
 - Criação de Arquivo `README.md`
 - Subir no Git
+
+## 07/05/2026
+- Criar estrutura inicial do **html**;
+
+## 08/05/2026
+- Criar variáveis de estilo;
+
+
 
