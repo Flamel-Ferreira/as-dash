@@ -1,0 +1,50 @@
+:root{
+
+  /* Primary Palette */
+  --primary-dark: #0F201D;
+  --primary-lightly-dark: #00C0AC;
+  --primary: #2DD4BF;
+  --primary-alpha-50: rgba(45, 212, 191, 0.5);
+  --primary-alpha-30: rgba(45, 212, 191, 0.3);
+  --primary-alpha-10: rgba(45, 212, 191, 0.1);
+
+  /* Secondary Palette */
+  --secondary: #0EA5E9;
+  --secondary-alpha-10: rgba(14, 165, 233, 0.1);
+
+  /* Tertiary Palette */
+  --tertiary: #F43F5E;
+  --tertiary-alpha-10: rgba(244, 63, 94, 0.1);
+
+  /* Transfer Colors */
+  --transfer-source: #905600;
+  --transfer-destination: #D4D12D;
+
+  /* Neutrals and Basics */
+  --white: #FFFFFF;
+  --neutral-100: #D9D9D9;
+  --neutral-300: #737373;
+  --neutral-400: #404040;
+  --neutral-500: #353535;
+  --neutral-600: #1E1E1E;
+  --neutral-700: #121212;
+  --neutral-700-alpha-20: rgba(18, 18, 18, 0.2);
+  --neutral-800: #0A0A0A;
+  --neutral-900: #070707;
+  --black: #000;
+  --black-alpha-25: rgba(0, 0, 0, 0.25);
+
+  --size-sm: 10px;
+  --size-md: 20px;
+  --size-jg: 30px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+
