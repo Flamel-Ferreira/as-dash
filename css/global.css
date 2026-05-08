@@ -34,9 +34,14 @@
   --black: #000;
   --black-alpha-25: rgba(0, 0, 0, 0.25);
 
+  --size-xsm: 6px;
   --size-sm: 10px;
   --size-md: 20px;
-  --size-jg: 30px;
+  --size-lg: 30px;
+
+  --full: 100%;
+  --half: 50%;
+  
 }
 
 *,
@@ -45,6 +50,199 @@
   margin: 0;
   padding:0;
   box-sizing: border-box;
+  font-family: 'Arial';
+  font-weight: bold;
 }
 
+/*Classes para estilos inline*/
+.bg-primary-dark{           --bg: var(--primary-dark);}
+.bg-primary-lightly-dark{   --bg: var(--primary-lightly-dark);}
+.bg-primary{                --bg: var(--primary);}
+.bg-primary-alpha-50{       --bg: var(--primary-alpha-50);}
+.bg-primary-alpha-30{       --bg: var(--primary-alpha-30);}
+.bg-primary-alpha-10{       --bg: var(--primary-alpha-10);}
+.bg-secondary{              --bg: var(--secondary);}
+.bg-secondary-alpha-10{     --bg: var(--secondary-alpha-10);}
+.bg-tertiary{               --bg: var(--tertiary);}
+.bg-tertiary-alpha-10{      --bg: var(--tertiary-alpha-10);}
+.bg-transfer-source{        --bg: var(--transfer-source);}
+.bg-transfer-destination{   --bg: var(--transfer-destination);}
+.bg-white{                  --bg: var(--white);}
+.bg-neutral-100{            --bg: var(--neutral-100);}
+.bg-neutral-300{            --bg: var(--neutral-300);}
+.bg-neutral-400{            --bg: var(--neutral-400);}
+.bg-neutral-500{            --bg: var(--neutral-500);}
+.bg-neutral-600{            --bg: var(--neutral-600);}
+.bg-neutral-700{            --bg: var(--neutral-700);}
+.bg-neutral-700-alpha-20{   --bg: var(--neutral-700-alpha-20);}
+.bg-neutral-800{            --bg: var(--neutral-800);}
+.bg-neutral-900{            --bg: var(--neutral-900);}
+.bg-black{                  --bg: var(--black);}
+.bg-black-alpha-25{         --bg: var(--black-alpha-25);}
 
+.color-primary-dark{           --color: var(--primary-dark);}
+.color-primary-lightly-dark{   --color: var(--primary-lightly-dark);}
+.color-primary{                --color: var(--primary);}
+.color-primary-alpha-50{       --color: var(--primary-alpha-50);}
+.color-primary-alpha-30{       --color: var(--primary-alpha-30);}
+.color-primary-alpha-10{       --color: var(--primary-alpha-10);}
+.color-secondary{              --color: var(--secondary);}
+.color-secondary-alpha-10{     --color: var(--secondary-alpha-10);}
+.color-tertiary{               --color: var(--tertiary);}
+.color-tertiary-alpha-10{      --color: var(--tertiary-alpha-10);}
+.color-transfer-source{        --color: var(--transfer-source);}
+.color-transfer-destination{   --color: var(--transfer-destination);}
+.color-white{                  --color: var(--white);}
+.color-neutral-100{            --color: var(--neutral-100);}
+.color-neutral-300{            --color: var(--neutral-300);}
+.color-neutral-400{            --color: var(--neutral-400);}
+.color-neutral-500{            --color: var(--neutral-500);}
+.color-neutral-600{            --color: var(--neutral-600);}
+.color-neutral-700{            --color: var(--neutral-700);}
+.color-neutral-700-alpha-20{   --color: var(--neutral-700-alpha-20);}
+.color-neutral-800{            --color: var(--neutral-800);}
+.color-neutral-900{            --color: var(--neutral-900);}
+.color-black{                  --color: var(--black);}
+.color-black-alpha-25{         --color: var(--black-alpha-25);}
+
+.wfull{ width:100%; }
+.hfull{ height:100%;}
+
+body{
+  background: var(--neutral-900);
+}
+
+/********************************* Classes Reutilizáveis *********************************/
+
+.center{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--size-sm);
+}
+
+.row{
+  display: flex;
+  gap: var(--size-sm);
+}
+
+.column{
+  display:flex;
+  flex-direction: column;
+  gap: var(--size-sm);
+}
+
+/******** CARD ********/
+details.card{
+  background-color: var(--neutral-700);
+  border: 1px solid var(--neutral-600);
+  border-radius: var(--size-xsm);
+  padding: var(--size-md);
+}
+
+details.card .shape{
+  box-shadow: 0px 0px 10px 2px var(--primary-alpha-50);
+  border-radius: var(--size-sm)
+}
+
+details.card summary.cardHeader{
+  width:100%;
+  display:flex;
+  align-items: center;
+  color: var(--white);
+  gap:var(--size-sm);
+}
+
+details.card summary.cardHeader > span{
+  flex:1;
+}
+
+details.card summary.cardHeader > svg.arrow{
+  width: 24px;
+  height: 24px;
+  fill: var(--white); 
+  stroke: var(--white);
+  transform: rotate(90deg);
+}
+
+details.card[open] summary.cardHeader > svg.arrow{
+  transform: rotate(180deg);
+}
+
+details.card .cardBody{
+  width:100%;
+  display:flex;
+  flex-direction: column;
+  margin-top: var(--size-md);
+  gap: var(--size-sm);
+  color: var(--white);
+}
+
+/******** CARD ********/
+
+/******** BOTÕES ********/
+
+
+.btOutline{
+  background: transparent;
+  border: 1px solid var(--bg);
+  color:var(--bg);
+  padding: var(--size-xsm);
+  border-radius: var(--size-xsm);
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--size-xsm);
+}
+
+.btOutline:hover{
+  background: color-mix(in srgb, var(--bg), transparent 75%);
+}
+
+.btFill{
+  background: var(--bg);
+  color:var(--color);
+  padding: var(--size-xsm);
+  border-radius: var(--size-xsm);
+  border:none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: var(--size-sm);
+}
+
+.btFill:hover{
+  background: color-mix(in srgb, var(--bg), transparent 20%);
+}
+
+/******** BOTÕES ********/
+
+/******** DADOS ********/
+
+d6{
+  width: 1em;
+  height: 1em;
+  display: inline-flex;
+  background: var(--bg)
+}
+
+d10{
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  width: .9em;
+  height: 1em;
+  display: inline-flex;
+  background: var(--bg);
+}
+
+d12{
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  width: 1em;
+  height: 1em;
+  display: inline-flex;
+  background: var(--bg);
+}
+/******** DADOS ********/
