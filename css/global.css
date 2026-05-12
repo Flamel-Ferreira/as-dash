@@ -112,6 +112,31 @@ body{
   background: var(--neutral-900);
 }
 
+svg{
+  fill: var(--bg);
+  stroke: var(--color);
+}
+
+svg.sm{
+  width:16px;
+  height:16px;
+}
+
+svg.md{
+  width:24px;
+  height:24px;
+}
+
+svg.lg{
+  width:40px;
+  height:40px;
+}
+
+svg.xlg{
+  width:52px;
+  height:52px;
+}
+
 /********************************* Classes Reutilizáveis *********************************/
 
 .center{
@@ -181,8 +206,6 @@ details.card .cardBody{
 /******** CARD ********/
 
 /******** BOTÕES ********/
-
-
 .btOutline{
   background: transparent;
   border: 1px solid var(--bg);
