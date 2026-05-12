@@ -6,7 +6,9 @@ const BREAKPOINTS = {
 };
 
 /**
- * Função de Resize: Executa toda vez que a tela muda de tamanho e quando carrega a tela.
+ * Executa toda vez que a tela muda de tamanho e quando carrega a tela.
+ * 
+ * Funcionalidades: Calcula e define qual o breakpoint atual como uma classe na tag body
  */
 function onResize() {
   const width = window.innerWidth;
@@ -26,4 +28,6 @@ function onResize() {
 
 document.addEventListener('DOMContentLoaded', onResize);
 window.addEventListener('resize', onResize);
+
+alert('Oi!');
 
