@@ -2,15 +2,13 @@
 
 ### Todo List:
 - Importar **fontes**;
-
-- **Testar** o aplicativo offline;
 - **Baixar os ícones** necessários;
 
-- Criar lógica de **renderização de screen**;
-- Criar lógica de armazenar em local storage;
 - Criar função `q`, `message`, `tooltip`, `toast`, trocar de código de textos por svg dos icones do sistema;
+- Criar lógica de armazenar em local storage;
 - Criar Lógica de exportação para JSON;
 - Criar a lógica de rolagem dos Dados;
+- Criar lógica de **renderização de screen**;
 
 - Criar tela de login;
 - Criar tela de dashboard;
@@ -59,6 +57,7 @@
 - Colocar favicon
 - Criar o **manifest** e configurações do **service worker**;
 - Criar os **ícones** para app PWA;
+- **Testar** o aplicativo offline;
 
 
 
