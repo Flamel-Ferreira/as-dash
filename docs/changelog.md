@@ -2,8 +2,7 @@
 
 ### Todo List:
 - Importar **fontes**;
-- Criar o **manifest** e configurações do **service worker**;
-- Criar os **ícones** para app PWA;
+
 - **Testar** o aplicativo offline;
 - **Baixar os ícones** necessários;
 
@@ -12,8 +11,6 @@
 - Criar função `q`, `message`, `tooltip`, `toast`, trocar de código de textos por svg dos icones do sistema;
 - Criar Lógica de exportação para JSON;
 - Criar a lógica de rolagem dos Dados;
-
-
 
 - Criar tela de login;
 - Criar tela de dashboard;
@@ -59,6 +56,10 @@
 - SVG Injection no Utils.js;
 - Criar **breakpoints**;
 - Criar **função de resize**;
+- Colocar favicon
+- Criar o **manifest** e configurações do **service worker**;
+- Criar os **ícones** para app PWA;
+
 
 
 
