@@ -29,5 +29,3 @@ function onResize() {
 document.addEventListener('DOMContentLoaded', onResize);
 window.addEventListener('resize', onResize);
 
-alert('Oi!');
-

@@ -4,7 +4,6 @@
 - Importar **fontes**;
 - **Baixar os ícones** necessários;
 
-- Criar função `q`, `message`, `tooltip`, `toast`, trocar de código de textos por svg dos icones do sistema;
 - Criar lógica de armazenar em local storage;
 - Criar Lógica de exportação para JSON;
 - Criar a lógica de rolagem dos Dados;
@@ -59,6 +58,8 @@
 - Criar os **ícones** para app PWA;
 - **Testar** o aplicativo offline;
 
+## 15/05/2026
+- Criar função `$`, `$$`, `pp`, trocar de código de textos por svg dos icones do sistema;
 
 
 
