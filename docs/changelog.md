@@ -61,6 +61,8 @@
 ## 15/05/2026
 - Criar função `$`, `$$`, `pp`, trocar de código de textos por svg dos icones do sistema;
 
-
+## 16/05/2026
+- Estilo Popups;
+- Refactor função de popup e de parseText;
 
 
