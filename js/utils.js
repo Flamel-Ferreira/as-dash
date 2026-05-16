@@ -22,19 +22,24 @@ const makeElement = (html)=>{
 }
 
 /** Popup */
-const pp = (title,text,bts) => {
-  const overlay = makeElement(`<overlay></overlay>`);
+const pp = (title,text,bts,colors = {text: 'color-white', bg: 'bg-secondary'}) => {
+  const overlay = makeElement(`<overlay class='center'></overlay>`);
   const pp = makeElement(`
-    <pp>
-      <h2>${title}</h2>
-      <p>${text}</p>
+    <pp class="card">
+      <h2>${parseText(title, colors.bg)}</h2>
+      <p>${parseText(text, colors.bg)}</p>
       <btArea></btArea>
     </pp>
   `);
 
-  Object.entries(bts).forEach(([key,value]) => {
-    const b = makeElement(`<button>${key}</button>`);
-    if(value && typeof value === 'function') b.addEventListener('click',value);
+  Object.entries(bts).forEach(([text,action]) => {
+    const b = makeElement(`<button class="btFill ${colors.bg} ${colors.text}">${text}</button>`);
+    if(action && typeof action === 'function') {
+      b.addEventListener('click',()=>{
+        action();
+        overlay.remove();
+      });
+    }
 
     $('btArea', pp).appendChild(b);
   });
@@ -43,21 +48,19 @@ const pp = (title,text,bts) => {
   document.body.appendChild(overlay);
 }
 
-// const texto = parseText('Ganhe 2 <s> perca <a> e <p>. Role 1<d6> <d10> e <d12>');
-// pp(texto,'text',{
-//   SIM: ()=>alert('aaah'),
-//   NÃO: ()=>alert('Nãaaao')
-// });
+pp("Erro!", 'Não é possível transferir recursos sem <a> disponíveis!',{
+  OK: ()=> {},
+});
 
 
-function parseText(text){
+function parseText(text,bgColor){
   const tagMap = {
-    '<s>': '<svg class="md bg-primary"><use href="#success"></use></svg>',
-    '<a>': '<svg class="md bg-primary"><use href="#adaptation"></use></svg>',
-    '<p>': '<svg class="md bg-primary"><use href="#stress"></use></svg>',
-    '<d6>': '<d6 class="bg-primary"></d6>',
-    '<d10>': '<d10 class="bg-primary"></d10>',
-    '<d12>': '<d12 class="bg-primary"></d12>'
+    '<s>': `<svg class="md ${bgColor}"><use href="#success"></use></svg>`,
+    '<a>': `<svg class="md ${bgColor}"><use href="#adaptation"></use></svg>`,
+    '<p>': `<svg class="md ${bgColor}"><use href="#stress"></use></svg>`,
+    '<d6>': `<d6 class="${bgColor}"></d6>`,
+    '<d10>': `<d10 class="${bgColor}"></d10>`,
+    '<d12>': `<d12 class="${bgColor}"></d12>`,
   };
 
   const regex = new RegExp(Object.keys(tagMap).join('|'), 'g');
