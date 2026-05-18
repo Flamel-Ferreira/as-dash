@@ -9,7 +9,6 @@
 - Criar a lógica de rolagem dos Dados;
 - Criar lógica de **renderização de screen**;
 
-- Criar tela de login;
 - Criar tela de dashboard;
 - Criar um menu desktop e mobile;
 - Criar lógica de troca de aba;
@@ -65,4 +64,6 @@
 - Estilo Popups;
 - Refactor função de popup e de parseText;
 
-
+## 18/05/2026
+- Criar tela de login;
+- Criar estrutura inicial do HTML

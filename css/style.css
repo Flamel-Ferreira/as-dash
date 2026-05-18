@@ -1,0 +1,51 @@
+screen.login{
+
+}
+
+screen.login .title{
+  color: var(--primary);
+  max-width: 90%;
+  width: 300px;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: var(--size-sm);
+}
+
+screen.dashboard{
+  display: flex;
+  flex-direction: column;
+}
+screen.dashboard dashboardHeader{ 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: var(--primary);
+  background-color: var(--neutral-700);
+  border: 1px solid var(--neutral-600);
+  padding: var(--size-md);
+}
+
+screen.dashboard dashboardBody{
+  display: flex;
+  flex-direction: row;
+  width:100%;
+  height: 100%;
+}
+
+screen.dashboard dashboardBody aside{
+  width:180px;
+  height: 100%;
+  background-color: var(--neutral-700);
+  border: 1px solid var(--neutral-600);
+  padding: var(--size-sm);
+}
+
+screen.dashboard dashboardBody page{
+  padding: var(--size-md);
+  /* flex:1; */
+  background:red;
+  overflow-y: auto;
+  overflow-x: none;
+  height:100vh;
+}
+

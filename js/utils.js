@@ -48,9 +48,9 @@ const pp = (title,text,bts,colors = {text: 'color-white', bg: 'bg-secondary'}) =
   document.body.appendChild(overlay);
 }
 
-pp("Erro!", 'Não é possível transferir recursos sem <a> disponíveis!',{
-  OK: ()=> {},
-});
+// pp("Erro!", 'Não é possível transferir recursos sem <a> disponíveis!',{
+//   OK: ()=> {},
+// });
 
 
 function parseText(text,bgColor){

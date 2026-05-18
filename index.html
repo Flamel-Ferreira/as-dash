@@ -16,10 +16,84 @@
 
   <script src="js/app.js"></script>
   <script src="js/main.js"></script>
-  <script src="js/utils.js"></script>
+  <script src="js/utils.js" defer></script>
 </head>
 <body>
-  <details open class="card wfull hfull">
+  <screen class="login center column" full>
+    <h1 class="title">Dashboard Assimilação</h1>
+    <button class="btOutline bg-primary">Acessar</button>
+  </screen>
+
+  <screen class="dashboard" full show>
+    <dashboardHeader>
+      <span>Assimilação</span>
+      <mobileMenu style="display: none;">
+        <button>Menu</button>
+        <menu>
+          <menuOption>Editor</menuOption>
+          <menuOption>Gerenciador</menuOption>
+        </menu>
+      </mobileMenu>
+    </dashboardHeader>
+    <dashboardBody>
+      <aside>
+        <sectionTitle>
+          <p>Ferramentas</p>
+          <p>Abas da Dashboard</p>
+        </sectionTitle>
+        <nav>
+          <button class="navButton" type="button">
+            <svg class="md bg-primary"><use href="#stress"></use></svg>
+            <span>Editor</span>
+          </button>
+          <button class="navButton" type="button">
+            <svg class="md bg-primary"><use href="#stress"></use></svg>
+            <span>Gerenciador</span>
+          </button>
+        </nav>
+      </aside>
+      <page id="editor">
+        <pageHeader>
+          <titleArea>
+            <h1>Editor de Conflitos</h1>
+            <p>Crie e baixe um arquivo que usará para gerenciar um conflito.</p>
+          </titleArea>
+          <button>
+            <svg class="md bg-primary"><use href="#stress"></use></svg>
+            <span>Exportar JSON</span>
+          </button>
+        </pageHeader>
+        <info class="card row">
+          <svg class="md bg-primary"><use href="#stress"></use></svg>
+          <span>Use &lt;s&gt;, &lt;a&gt;, &lt;p&gt;, &lt;d6&gt;, &lt;d10&gt;, &lt;d12&gt; para se referir a sucesso, adaptação, pressão, d6, d10 e d12 respectivamente. </span>
+        </info>
+        <section class="cardsSection">
+          <div class="card">
+            <titleArea>
+              <svg class="md bg-primary"><use href="#stress"></use></svg>
+              <h3>INFORMAÇÕES GERAIS</h3>
+            </titleArea>
+            <div class="cardBody">
+              <inputHolder>
+                <label for="conflictName">NOME DO CONFLITO</label>
+                <input type="text" id="conflictName" name="conflictName" placeholder="Digite o nome do conflito..."/>
+              </inputHolder>
+              <inputHolder>
+                <label for="conflictName">DESCRIÇÃO DO CONFLITO</label>
+                <textarea id="conflictDescription" name="conflictDescription" placeholder="Digite a descrição do conflito..."></textarea>
+              </inputHolder>
+            </div>
+          </div>
+        </section>
+      </page>
+      <!-- <page id="management">
+
+      </page> -->
+    </dashboardBody>
+  </screen>
+
+
+  <!-- <details open class="card wfull hfull">
     <summary class="cardHeader">
       <span>DADOS DO CONFLITO BOTÃO</span>
       <svg class="arrow"><use xlink:href="#arrow"></use></svg>
@@ -43,7 +117,7 @@
       </button>
 
     </div>
-  </details>
+  </details> -->
   
 </body>
 </html>

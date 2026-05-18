@@ -44,14 +44,13 @@
   
 }
 
-*,
-*::before,
-*::after {
+*{
   margin: 0;
   padding:0;
   box-sizing: border-box;
   font-family: 'Arial';
   font-weight: bold;
+  scrollbar-gutter: stable;
 }
 
 /*Classes para estilos inline*/
@@ -137,6 +136,20 @@ svg.xlg{
   height:52px;
 }
 
+[full]{
+  position:absolute;
+  width:100vw;
+  height: 100vh;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right:0;
+  z-index:1;
+}
+
+screen:not([show]){
+  display: none;
+}
 /********************************* Classes Reutilizáveis *********************************/
 
 .center{
