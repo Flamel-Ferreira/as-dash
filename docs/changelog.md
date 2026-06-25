@@ -67,3 +67,6 @@
 ## 18/05/2026
 - Criar tela de login;
 - Criar estrutura inicial do HTML
+
+## 25/06/2026
+- Mudança Teste;
